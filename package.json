@@ -1,0 +1,24 @@
+{
+  "name": "raptorbot",
+  "version": "1.0.0",
+  "description": "Bot que garda voces de tor",
+  "main": "raptorBot.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterfabela/RaptorBot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "media"
+  ],
+  "author": "fabelaretorcida@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masterfabela/RaptorBot/issues"
+  },
+  "homepage": "https://github.com/masterfabela/RaptorBot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}

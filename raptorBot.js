@@ -1,40 +1,34 @@
+process.env.NTBA_FIX_319 = 1;
 const TelegramBot = require('node-telegram-bot-api');
+const CONSTANTS = require('./constants');
 const TOKEN = '336450760:AAEzojHyDAWbb_GdExpeJPOGCT4kAwNQ9QQ';
 const bot = new TelegramBot(TOKEN, { polling: true });
-const posiblesEntradas = ['hola', 'adeus', 'enviame una foto'];
+const MESSAGES = CONSTANTS.VALID_MESSAGES;
 
 bot.on('start', msg => {
   bot.sendMessage(msg.chat.id, 'Hola Señor');
 });
 
 bot.on('message', msg => {
-  comprobarRespuesta(posiblesEntradas, msg.text, msg.chat.id);
+  contestarMensaje(msg.chat.id, getResponse(msg.text));
+  contestarAudio(msg.chat.id);
 });
 
-function comprobarRespuesta(posiblesEntradas, mensajeUsuario, chatID) {
-  posiblesEntradas.forEach(respuesta => {
-    if (mensajeUsuario.toLowerCase() == respuesta) {
-      responseControl(respuesta, chatID);
-    }
-  });
-}
-
-function responseControl(userMessage, chatID) {
-  if (userMessage == 'hola') contestarMensaje(chatID, 'Hola Señor');
-  if (userMessage == 'adeus') contestarMensaje(chatID, 'Adeus Señor');
-  if (userMessage == 'enviame una foto')
-    contestarFoto(
-      chatID,
-      'https://code.visualstudio.com/assets/docs/nodejs/nodejs/app-js-file-created.png'
-    );
+function getResponse(userMessage) {
+  const lowerCaseMessage = userMessage.toLowerCase();
+  var response;
+  MESSAGES[lowerCaseMessage]
+    ? (response = MESSAGES[lowerCaseMessage].response)
+    : (response = MESSAGES.default.response);
+  return response;
 }
 
 function contestarMensaje(id, respuesta) {
   bot.sendMessage(id, respuesta);
 }
 
-function contestarAudio(id, respuesta) {
-  bot.sendAudio(id);
+function contestarAudio(id) {
+  bot.sendAudio(id, 'audiosTor/ti crees.mp3');
 }
 
 function contestarFoto(id, urlFoto) {
