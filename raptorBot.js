@@ -10,27 +10,38 @@ bot.on('start', msg => {
 });
 
 bot.on('message', msg => {
-  contestarMensaje(msg.chat.id, getResponse(msg.text));
-  contestarAudio(msg.chat.id);
+  contestarAudio(msg.chat.id, getResponseFile(msg.text));
 });
 
-function getResponse(userMessage) {
+function getResponseFile(userMessage) {
   const lowerCaseMessage = userMessage.toLowerCase();
-  var response;
-  MESSAGES[lowerCaseMessage]
-    ? (response = MESSAGES[lowerCaseMessage].response)
-    : (response = MESSAGES.default.response);
-  return response;
+  CONSTANTS.VALID_MESSAGES.forEach(function(message) {
+    if (lowerCaseMessage.contains(message.request)) {
+      return message.response;
+    }
+  });
 }
 
 function contestarMensaje(id, respuesta) {
   bot.sendMessage(id, respuesta);
 }
 
-function contestarAudio(id) {
-  bot.sendAudio(id, 'audiosTor/ti crees.mp3');
+function contestarAudio(id, archivo) {
+  enviarGrupoDeArchivos(id);
+  bot.sendAudio(id, archivo);
 }
 
 function contestarFoto(id, urlFoto) {
   bot.sendPhoto(id, urlFoto);
+}
+
+function obtenerAudiosDeTor() {
+  return {
+    type: 'audio',
+    media: 'multipart/form-data under audiosTor/ti crees.mp3'
+  };
+}
+
+function enviarGrupoDeArchivos(chatID) {
+  bot.sendMediaGroup(chatID, obtenerAudiosDeTor);
 }

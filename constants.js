@@ -2,16 +2,17 @@
 function constants() {
   return {
     VALID_MESSAGES: {
-      hola: {
-        request: 'hola',
-        response: 'Hola chámome raptorBot'
+      aperitivo: {
+        request: 'aperitivo',
+        response: 'audiosTor/aperitivo.mp3'
       },
-      adeus: {
-        request: 'adeus',
-        response: 'Espero que nos vexamos pronto'
+      ardilla: {
+        request: 'ardilla',
+        response: 'audiosTor/ardilla.mp3'
       },
-      default: {
-        response: 'Ainda non teño a capacidade de contestar a iso'
+      nada: {
+        request: 'nada',
+        response: null
       }
     }
   };
