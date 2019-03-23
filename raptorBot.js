@@ -14,31 +14,34 @@ bot.on('message', msg => {
 });
 
 function getResponseFile(userMessage) {
+  var response;
   const lowerCaseMessage = userMessage.toLowerCase();
   CONSTANTS.VALID_MESSAGES.forEach(function(message) {
-    if (lowerCaseMessage.contains(message.request)) {
-      return message.response;
-    }
+    message.request.forEach(function(request) {
+      if (lowerCaseMessage.includes(request)) {
+        response = message.response;
+      }
+    });
   });
+  return response;
 }
 
 function contestarMensaje(id, respuesta) {
   bot.sendMessage(id, respuesta);
 }
 
-function contestarAudio(id, archivo) {
-  enviarGrupoDeArchivos(id);
-  bot.sendAudio(id, archivo);
+function contestarAudio(id, rutaAudio) {
+  bot.sendVoice(id, rutaAudio);
 }
 
 function contestarFoto(id, urlFoto) {
   bot.sendPhoto(id, urlFoto);
 }
 
-function obtenerAudiosDeTor() {
+function obtenerAudioDeTor(rutaAudio) {
   return {
     type: 'audio',
-    media: 'multipart/form-data under audiosTor/ti crees.mp3'
+    media: 'multipart/form-data under ' + rutaAudio
   };
 }
 
