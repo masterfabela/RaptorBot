@@ -106,6 +106,74 @@ function constants() {
       {
         request: ['gatulovia'],
         response: rutaAudios + 'gatulovia.mp3'
+      },
+      {
+        request: ['que non'],
+        response: rutaAudios + 'queNon.mp3'
+      },
+      {
+        request: ['ti tampouco'],
+        response: rutaAudios + 'tiTampouco.mp3'
+      },
+      {
+        request: ['hora parada'],
+        response: rutaAudios + 'horaParada.mp3'
+      },
+      {
+        request: ['quen cho preguntou'],
+        response: rutaAudios + 'quenChoPreguntou.mp3'
+      },
+      {
+        request: ['durmindo'],
+        response: rutaAudios + 'durmindo.mp3'
+      },
+      {
+        request: ['pintar a mona'],
+        response: rutaAudios + 'pintarMona.mp3'
+      },
+      {
+        request: ['criminal'],
+        response: rutaAudios + 'criminal.mp3'
+      },
+      {
+        request: ['cotiza'],
+        response: rutaAudios + 'cotiza.mp3'
+      },
+      {
+        request: ['cornudo'],
+        response: rutaAudios + 'cornudo.mp3'
+      },
+      {
+        request: ['sentate'],
+        response: rutaAudios + 'sentate.mp3'
+      },
+      {
+        request: ['chanana'],
+        response: rutaAudios + 'chanana.mp3'
+      },
+      {
+        request: ['causa'],
+        response: rutaAudios + 'causa.mp3'
+      },
+      {
+        request: ['borroada'],
+        response: rutaAudios + 'borroada.mp3'
+      },
+      {
+        request: ['yamaha'],
+        response: rutaAudios + 'yamaha.mp3'
+      },
+      {
+        request: ['tira a man e esconde a pedra'],
+        response: rutaAudios + 'tiraManEscondePedra.mp3'
+      },
+      {
+        request: ['como te pos'],
+        response: rutaAudios + 'comoTePos.mp3'
+      },
+      {
+        request: ['deitas'],
+        response: rutaAudios + 'deitas.mp3'
       }
     ]
   };
