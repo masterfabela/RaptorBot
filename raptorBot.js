@@ -16,7 +16,7 @@ bot.on('message', msg => {
 function getResponseFile(userMessage) {
   var response;
   const lowerCaseMessage = userMessage.toLowerCase();
-  CONSTANTS.VALID_MESSAGES.forEach(function(message) {
+  MESSAGES.forEach(function(message) {
     message.request.forEach(function(request) {
       if (lowerCaseMessage.includes(request)) {
         response = message.response;
@@ -26,25 +26,6 @@ function getResponseFile(userMessage) {
   return response;
 }
 
-function contestarMensaje(id, respuesta) {
-  bot.sendMessage(id, respuesta);
-}
-
 function contestarAudio(id, rutaAudio) {
   bot.sendVoice(id, rutaAudio);
-}
-
-function contestarFoto(id, urlFoto) {
-  bot.sendPhoto(id, urlFoto);
-}
-
-function obtenerAudioDeTor(rutaAudio) {
-  return {
-    type: 'audio',
-    media: 'multipart/form-data under ' + rutaAudio
-  };
-}
-
-function enviarGrupoDeArchivos(chatID) {
-  bot.sendMediaGroup(chatID, obtenerAudiosDeTor);
 }
