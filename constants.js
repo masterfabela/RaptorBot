@@ -4,10 +4,6 @@ function constants() {
   return {
     VALID_MESSAGES: [
       {
-        request: ['aperitivo'],
-        response: rutaAudios + 'aperitivo.mp3'
-      },
-      {
         request: ['ardilla'],
         response: rutaAudios + 'ardilla.mp3'
       },
@@ -50,10 +46,6 @@ function constants() {
       {
         request: ['tas bo'],
         response: rutaAudios + 'tas bo.mp3'
-      },
-      {
-        request: ['ardilla'],
-        response: 'ardilla.mp3'
       },
       {
         request: ['haber tipo'],
@@ -102,10 +94,6 @@ function constants() {
       {
         request: ['done', 'terminado'],
         response: rutaAudios + 'done.mp3'
-      },
-      {
-        request: ['que pasa'],
-        response: ''
       },
       {
         request: ['coca cola'],
@@ -208,7 +196,7 @@ function constants() {
         response: rutaAudios + 'este carallo e criminal.mp3'
       },
       {
-        request: ['flautista'],
+        request: ['flautista', 'flauta', 'musica'],
         response: rutaAudios + 'flautista.mp3'
       },
       {
@@ -230,22 +218,19 @@ function constants() {
       {
         request: ['okey'],
         response: rutaAudios + 'OK.mp3'
+      }
+      ,
+      {
+        request: ['tella', 'loco'],
+        response: rutaAudios + 'ti estas coma 1 tella.mp3'
       },
       {
         request: ['botella'],
         response: rutaAudios + 'pasame la botella.mp3'
       },
       {
-        request: ['como 1 tella, como unha tella'],
-        response: rutaAudios + 'ti estas coma 1 tella.mp3'
-      },
-      {
-        request: ['uepa'],
+        request: ['uepa', 'lolito'],
         response: rutaAudios + 'uepa.mp3'
-      },
-      {
-        request: ['xivale'],
-        response: rutaAudios + 'xivale xivale.mp3'
       },
       {
         request: ['dalle ostia'],
@@ -256,7 +241,7 @@ function constants() {
         response: rutaAudios + 'cotizas mono.mp3'
       },     
       {
-        request: ['agua'],
+        request: ['agua', 'auga'],
         response: rutaAudios + 'satisfaccion agua.mp3'
       },
       {
@@ -268,7 +253,7 @@ function constants() {
         response: rutaAudios + 'pssss.mp3'
       },
       {
-        request: ['producto orneado'],
+        request: ['producto', 'aperitivo', 'comida'],
         response: rutaAudios + 'producto orneado.mp3'
       },
       {
@@ -309,7 +294,7 @@ function constants() {
       },
       {
         request: ['ooh','ooh oooh'], 
-        response: rutaAudios + 'ooh ooooh'
+        response: rutaAudios + 'ooh ooooh.mp3'
       },
       {
         request: ['ja jaaa',], 
@@ -317,7 +302,7 @@ function constants() {
       },
       {
         request: ['jujaj','juaj'], 
-        response: rutaAudios + 'jujaj'
+        response: rutaAudios + 'jujaj.mp3'
       },
       {
         request: ['home','aguantas'], 
@@ -356,7 +341,7 @@ function constants() {
         response: rutaAudios + 'aproveita.mp3'
       },
       {
-        request: ['ordenador'], 
+        request: ['ordenador', 'pc', 'portatil'], 
         response: rutaAudios + 'paraseme o ordenador.mp3'
       },
       {
@@ -364,7 +349,7 @@ function constants() {
         response: rutaAudios + 'cherryAusente3mins.mp3'
       },
       {
-        request: ['pa','petardazo'], 
+        request: ['hipo','petardazo'], 
         response: rutaAudios + 'petardazo.mp3'
       },
       {
@@ -443,6 +428,10 @@ function constants() {
         request: ['durmir', 'dormir'], 
         response: rutaAudios + 'vou ir a planchar a orella.mp3'
       },
+      {
+        request: ['xivale'],
+        response: rutaAudios + 'xivale xivale.mp3'
+      }
 
     ]
   };
