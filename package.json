@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Bot que garda voces de tor",
   "main": "raptorBot.js",
+  "scripts": {
+    "start": "pm2 start raptorBot.js",
+    "stop": "pm2 stop raptorBot.js",
+    "restart": "pm2 restart raptorBot.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/masterfabela/RaptorBot.git"
@@ -19,6 +24,7 @@
   },
   "homepage": "https://github.com/masterfabela/RaptorBot#readme",
   "dependencies": {
-    "node-telegram-bot-api": "^0.30.0"
+    "node-telegram-bot-api": "^0.30.0",
+    "pm2": "^4.2.1"
   }
 }

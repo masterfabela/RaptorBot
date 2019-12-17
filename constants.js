@@ -36,8 +36,12 @@ function constants() {
         response: rutaAudios + 'lingua.mp3'
       },
       {
-        request: ['porco', 'puerco'],
+        request: ['porco', 'pueerco'], 
         response: rutaAudios + 'puerco.mp3'
+      },
+      {
+        request: ['puerco'],
+        response: rutaAudios + 'puerco2.mp3'
       },
       {
         request: ['suspiro'],
@@ -62,6 +66,10 @@ function constants() {
       {
         request: ['xa o tiñas', 'espabila'],
         response: rutaAudios + 'espabila.mp3'
+      },
+      {
+        request: ['espabila2'],
+        response: rutaAudios + 'espabila2.mp3'
       },
       {
         request: ['a que andas', 'ocupado', 'andas'],
@@ -190,7 +198,252 @@ function constants() {
       {
         request: ['pu pun'],
         response: rutaAudios + 'pu pun pu we.mp3'
-      },    
+      },
+      {
+        request: ['era visto'],
+        response: rutaAudios + 'era visto.mp3'
+      },
+      {
+        request: ['e criminal'],
+        response: rutaAudios + 'este carallo e criminal.mp3'
+      },
+      {
+        request: ['flautista'],
+        response: rutaAudios + 'flautista.mp3'
+      },
+      {
+        request: ['lura'],
+        response: rutaAudios + 'k borro botas lura.mp3'
+      },
+      {
+        request: ['mallado'],
+        response: rutaAudios + 'mallado.mp3'
+      },
+      {
+        request: ['digas que no', 'digas que non'],
+        response: rutaAudios + 'no me digas que no.mp3'
+      },
+      {
+        request: ['non te botes'],
+        response: rutaAudios + 'non te botes e.mp3'
+      },
+      {
+        request: ['okey'],
+        response: rutaAudios + 'OK.mp3'
+      },
+      {
+        request: ['botella'],
+        response: rutaAudios + 'pasame la botella.mp3'
+      },
+      {
+        request: ['como 1 tella, como unha tella'],
+        response: rutaAudios + 'ti estas coma 1 tella.mp3'
+      },
+      {
+        request: ['uepa'],
+        response: rutaAudios + 'uepa.mp3'
+      },
+      {
+        request: ['xivale'],
+        response: rutaAudios + 'xivale xivale.mp3'
+      },
+      {
+        request: ['dalle ostia'],
+        response: rutaAudios + 'Pero dalle ostia dalle.mp3'
+      },
+      {
+        request: ['cotizas'],
+        response: rutaAudios + 'cotizas mono.mp3'
+      },     
+      {
+        request: ['agua'],
+        response: rutaAudios + 'satisfaccion agua.mp3'
+      },
+      {
+        request: ['dame papel'],
+        response: rutaAudios + 'rafaelpapelpacotabaco.mp3'
+      },
+      {
+        request: ['psss'],
+        response: rutaAudios + 'pssss.mp3'
+      },
+      {
+        request: ['producto orneado'],
+        response: rutaAudios + 'producto orneado.mp3'
+      },
+      {
+        request: ['asubio'], 
+        response: rutaAudios + 'asubio.mp3'
+      },
+      {
+        request: ['ba buino'], 
+        response: rutaAudios + 'ba buino.mp3'
+      },
+      {
+        request: ['heartstone'], 
+        response: rutaAudios + 'jromo paria.mp3'
+      },
+      {
+        request: ['risada','risa'], 
+        response: rutaAudios + 'risada larga.mp3'
+      },
+      {
+        request: ['goliat','dark orbit'], 
+        response: rutaAudios + 'nunha goliat.mp3'
+      },
+      {
+        request: ['eespabila','espabilado'], 
+        response: rutaAudios + 'eespabila.mp3'
+      },
+      {
+        request: ['colen','entrada'], 
+        response: rutaAudios + 'colen entrada.mp3'
+      },
+      {
+        request: ['indio','glu glu','gluglu'], 
+        response: rutaAudios + 'indio.mp3'
+      },
+      {
+        request: ['give me fire','dame lume','wavin flag','flag'], 
+        response: rutaAudios + 'give me fire.mp3'
+      },
+      {
+        request: ['ooh','ooh oooh'], 
+        response: rutaAudios + 'ooh ooooh'
+      },
+      {
+        request: ['ja jaaa',], 
+        response: rutaAudios + 'ja jaaa.mp3'
+      },
+      {
+        request: ['jujaj','juaj'], 
+        response: rutaAudios + 'jujaj'
+      },
+      {
+        request: ['home','aguantas'], 
+        response: rutaAudios + 'jajaja ome.mp3'
+      },
+      {
+        request: ['lura'], 
+        response: rutaAudios + 'que boorro botas lura.mp3'
+      },
+      {
+        request: ['borro'], 
+        response: rutaAudios + 'borrolura.mp3'
+      },
+      {
+        request: ['pareu','cajo na madre'], 
+        response: rutaAudios + 'madrepareupuerco.mp3'
+      },
+      {
+        request: ['done'], 
+        response: rutaAudios + 'done.mp3'
+      },
+      {
+        request: ['sigue na misma'], 
+        response: rutaAudios + 'siguemismajaja.mp3'
+      },
+      {
+        request: ['sigues na misma'], 
+        response: rutaAudios + 'siguenamismamadrepareu.mp3'
+      },
+      {
+        request: ['ja ja'], 
+        response: rutaAudios + 'non me sale o jaja.mp3'
+      },
+      {
+        request: ['aproveita','aproveitar'], 
+        response: rutaAudios + 'aproveita.mp3'
+      },
+      {
+        request: ['ordenador'], 
+        response: rutaAudios + 'paraseme o ordenador.mp3'
+      },
+      {
+        request: ['cherry','ausente'], 
+        response: rutaAudios + 'cherryAusente3mins.mp3'
+      },
+      {
+        request: ['pa','petardazo'], 
+        response: rutaAudios + 'petardazo.mp3'
+      },
+      {
+        request: ['cotizar'], 
+        response: rutaAudios + 'udoBotCotizar.mp3'
+      },
+      {
+        request: ['buscas','non encontras'], 
+        response: rutaAudios + 'quebuscasencontrado.mp3'
+      },
+      {
+        request: ['que pasa'], 
+        response: rutaAudios + 'quepasajiji.mp3'
+      },
+      {
+        request: ['risilla','non e nada malo'], 
+        response: rutaAudios + 'risanonenadamalo.mp3'
+      },
+      {
+        request: ['jaja jaja'], 
+        response: rutaAudios + 'risa desviada.mp3'
+      },
+      {
+        request: ['malicia','malvado','maligno'], 
+        response: rutaAudios + 'risa maliciosa.mp3'
+      },
+      {
+        request: ['jajaja'], 
+        response: rutaAudios + 'risa.mp3'
+      },
+      {
+        request: ['jajaj'], 
+        response: rutaAudios + 'risada instantanea.mp3'
+      },
+      {
+        request: ['arre carallo'], 
+        response: rutaAudios + 'arrecarallojodes.mp3'
+      },
+      {
+        request: ['pero ti seica me jodes'], 
+        response: rutaAudios + 'perotiseicamejodes.mp3'
+      },
+      {
+        request: ['sopa de caracol','sopa','bailar'], 
+        response: rutaAudios + 'sopadecaracol.mp3'
+      },
+      {
+        request: ['ñam ñam','run'], 
+        response: rutaAudios + 'suenarunrun.mp3'
+      },
+      {
+        request: ['rollo','vara'], 
+        response: rutaAudios + 'rollovaraseca.mp3'
+      },
+      {
+        request: ['vaso','afogaste'], 
+        response: rutaAudios + 'afojastevasoajua.mp3'
+      },
+      {
+        request: ['tos'], 
+        response: rutaAudios + 'tos.mp3'
+      },
+      {
+        request: ['filtra','area'], 
+        response: rutaAudios + 'filtraareagusto.mp3'
+      },
+      {
+        request: ['vale'], 
+        response: rutaAudios + 'vale tipo.mp3'
+      },
+      {
+        request: ['cona','e o mismo', 'é o mismo'], 
+        response: rutaAudios + 'conamisma.mp3'
+      },
+      {
+        request: ['durmir', 'dormir'], 
+        response: rutaAudios + 'vou ir a planchar a orella.mp3'
+      },
+
     ]
   };
 }
