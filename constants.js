@@ -148,8 +148,12 @@ function constants() {
         response: rutaAudios + 'sentate.mp3'
       },
       {
-        request: ['chanana'],
+        request: ['cha na na'],
         response: rutaAudios + 'chanana.mp3'
+      },
+      {
+        request: ['chanana'],
+        response: rutaAudios + 'chanana2.mp3'
       },
       {
         request: ['causa'],
@@ -174,7 +178,19 @@ function constants() {
       {
         request: ['deitas'],
         response: rutaAudios + 'deitas.mp3'
-      }
+      },
+      {
+        request: ['dios'],
+        response: rutaAudios + 'chic! dioss.mp3'
+      },
+      {
+        request: ['uuu','joker'],
+        response: rutaAudios + 'luuu jajaja.mp3'
+      },
+      {
+        request: ['pu pun'],
+        response: rutaAudios + 'pu pun pu we.mp3'
+      },    
     ]
   };
 }
