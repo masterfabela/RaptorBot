@@ -2,11 +2,14 @@
   "name": "raptorbot",
   "version": "1.0.0",
   "description": "Bot que garda voces de tor",
-  "main": "raptorBot.js",
+  "main": "raptorBot.ts",
   "scripts": {
-    "start": "pm2 start raptorBot.js",
-    "stop": "pm2 stop raptorBot.js",
-    "restart": "pm2 restart raptorBot.js"
+    "start": "pm2 start dist/raptorBot.js",
+    "stop": "pm2 stop dist/raptorBot.js",
+    "restart": "pm2 restart dist/raptorBot.js",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./raptorBot.ts",
+    "prod": "tsc && node ./dist/raptorBot.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,10 @@
   },
   "homepage": "https://github.com/masterfabela/RaptorBot#readme",
   "dependencies": {
+    "@types/node": "^13.7.1",
     "node-telegram-bot-api": "^0.40.0",
-    "pm2": "^4.2.1"
+    "pm2": "^4.2.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
   }
 }
