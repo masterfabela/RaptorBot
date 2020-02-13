@@ -9,7 +9,7 @@
     "restart": "pm2 restart dist/raptorBot.js",
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./raptorBot.ts",
-    "prod": "tsc && node ./dist/raptorBot.js"
+    "prod": "tsc && pm2 start ./dist/raptorBot.js"
   },
   "repository": {
     "type": "git",
