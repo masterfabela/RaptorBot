@@ -20,13 +20,13 @@ bot.on('message', (msg:any) => {
 function getResponseFile(userMessage:string):string {
   let response:string = '';
   const lowerCaseMessage = userMessage.toLowerCase();
-  MESSAGES.forEach(function(message:Resposta) {
-    message.request.forEach(function(request:string) {
+  MESSAGES.forEach(message => {
+    message.request.forEach(request => {
       if (lowerCaseMessage.includes(request)) {
         response = message.response;
       }
-    });
-  });
+    })
+  })
   return response;
 }
 
