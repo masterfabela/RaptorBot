@@ -3,7 +3,7 @@ import { PaqueteRespostas, Resposta } from "./Resposta";
 process.env.NTBA_FIX_319 = '1';
 const TelegramBot = require('node-telegram-bot-api');
 const CONSTANTS = require('./constants');
-const TOKEN = '336450760:AAEzojHyDAWbb_GdExpeJPOGCT4kAwNQ9QQ';
+const TOKEN = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 const bot = new TelegramBot(TOKEN, { polling: true });
 const MESSAGES:Resposta[] = CONSTANTS.VALID_MESSAGES;
 
