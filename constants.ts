@@ -1,5 +1,7 @@
+import { Resposta, PaqueteRespostas } from "./Resposta";
+
 //module constants.js
-function constants() {
+function constants():PaqueteRespostas {
     const rutaAudios = 'audiosMP3/';
     return {
       VALID_MESSAGES: [
@@ -431,7 +433,7 @@ function constants() {
         {
           request: ['xivale'],
           response: rutaAudios + 'xivale xivale.mp3'
-        }
+        },
   
       ]
     };
