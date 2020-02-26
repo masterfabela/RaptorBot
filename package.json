@@ -4,9 +4,9 @@
   "description": "Bot que garda voces de tor",
   "main": "raptorBot.ts",
   "scripts": {
-    "start": "pm2 start dist/raptorBot.js",
+    "start": "tsc && pm2 start ./dist/raptorBot.js",
     "stop": "pm2 stop dist/raptorBot.js",
-    "restart": "pm2 restart dist/raptorBot.js",
+    "restart": "tsc && pm2 restart ./dist/raptorBot.js",
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./raptorBot.ts",
     "prod": "tsc && pm2 start ./dist/raptorBot.js"

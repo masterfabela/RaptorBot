@@ -411,7 +411,7 @@ function constants():PaqueteRespostas {
           response: rutaAudios + 'afojastevasoajua.mp3'
         },
         {
-          request: ['tos'], 
+          request: [' tos'], 
           response: rutaAudios + 'tos.mp3'
         },
         {
